@@ -31,8 +31,8 @@ class PhoneBook
 		int oldestIndex;
 
 	public:
-		PhoneBook();  // declaração do construtor
-		~PhoneBook(); // declaração do destrutor
+		PhoneBook();
+		~PhoneBook();
 		void addContact();
 		void showContact();
 };
