@@ -2,22 +2,22 @@
 #include <iostream>
 #include <iomanip>
 
-Zombie* newZombie(std::string name);
-void randomChump(std::string name);
+Zombie* zombieHorde(int N, std::string name);
 
 int main(void)
 {
-	Zombie* heapZombie;
+	Zombie* horde;
+	int N = 5;
 
-	std::cout << "Creating heap zombie..." << std::endl;
-	heapZombie = newZombie("HeapZombie");
-	heapZombie->announce();
+	std::cout << "Creating a horde..." << std::endl;
+	horde = zombieHorde(N, "Zombie");
 	
-	std::cout << "\nCreating stack zombie..." << std::endl;
-	randomChump("StackZombie");
+	std::cout << "\nAnnouncing all zombies:" << std::endl;
+	for (int i = 0; i < N; i++)
+		horde[i].announce();
 	
-	std::cout << "\nDeleting heap zombie..." << std::endl;
-	delete heapZombie;
+	std::cout << "\nDeleting horde..." << std::endl;
+	delete[] horde;
 	
 	std::cout << "\nEnd of program" << std::endl;
 	return 0;

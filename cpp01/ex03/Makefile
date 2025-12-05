@@ -1,10 +1,10 @@
-NAME	:= Zombie_horde
+NAME	:= Violence
 CC		:= c++
 FLAGS	:= -Wall -Wextra -Werror -g
 
 # Source Files
 
-SRCS := main.cpp Zombie.cpp zombieHorde.cpp
+SRCS := main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 
 OBJS := $(SRCS:.cpp=.o)
 
