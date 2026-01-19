@@ -1,6 +1,6 @@
 NAME	:= BrainyAnimals
 CC		:= c++
-FLAGS	:= -Wall -Wextra -Werror -g
+FLAGS	:= -Wall -Wextra -Werror -g -std=c++98
 
 # Source Files
 

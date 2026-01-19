@@ -137,7 +137,8 @@ int main()
 	{
 		std::cout << "Input Comand (ADD, SEARCH, EXIT): ";
 		std::cin >> command;
-
+		if (!(std::cin >> command))
+			break;
 		if (command == "ADD")
 			phonebook.addContact();
 		else if (command == "SEARCH")

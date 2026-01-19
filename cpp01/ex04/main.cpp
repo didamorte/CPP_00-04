@@ -26,7 +26,7 @@ int main(int ac, char **av)
 	infile.open(filename.c_str());
 	if (!infile.is_open())
 	{
-		std::cerr << "Error: Can't open file" << filename << std::endl;
+		std::cerr << "Error: Can't open file: " << filename << std::endl;
 		return (1);
 	}
 	outfile.open((filename + ".replace").c_str());
